@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		740121702770675F002CB5E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401216F2770675F002CB5E5 /* AppDelegate.swift */; };
 		740121722770675F002CB5E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740121712770675F002CB5E5 /* SceneDelegate.swift */; };
-		740121742770675F002CB5E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740121732770675F002CB5E5 /* ViewController.swift */; };
 		740121772770675F002CB5E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740121752770675F002CB5E5 /* Main.storyboard */; };
 		7401217927706762002CB5E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7401217827706762002CB5E5 /* Assets.xcassets */; };
 		7401217C27706762002CB5E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7401217A27706762002CB5E5 /* LaunchScreen.storyboard */; };
+		74012185277069DA002CB5E5 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74012184277069DA002CB5E5 /* InputViewController.swift */; };
+		7401218727706A7D002CB5E5 /* InputsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401218627706A7D002CB5E5 /* InputsViewModel.swift */; };
+		7401218A27706AC1002CB5E5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401218927706AC1002CB5E5 /* BaseViewModel.swift */; };
+		7401218E27706EAB002CB5E5 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401218C27706EAB002CB5E5 /* OptionsTableViewCell.swift */; };
+		7401218F27706EAB002CB5E5 /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7401218D27706EAB002CB5E5 /* OptionsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7401216C2770675F002CB5E5 /* The Wheely Cool App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Wheely Cool App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7401216F2770675F002CB5E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		740121712770675F002CB5E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		740121732770675F002CB5E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		740121762770675F002CB5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7401217827706762002CB5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7401217B27706762002CB5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7401217D27706762002CB5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74012184277069DA002CB5E5 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		7401218627706A7D002CB5E5 /* InputsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputsViewModel.swift; sourceTree = "<group>"; };
+		7401218927706AC1002CB5E5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		7401218C27706EAB002CB5E5 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		7401218D27706EAB002CB5E5 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		7401216E2770675F002CB5E5 /* The Wheely Cool App */ = {
 			isa = PBXGroup;
 			children = (
+				7401218827706AB0002CB5E5 /* Base */,
+				74012183277069A3002CB5E5 /* Inputs */,
 				7401216F2770675F002CB5E5 /* AppDelegate.swift */,
 				740121712770675F002CB5E5 /* SceneDelegate.swift */,
-				740121732770675F002CB5E5 /* ViewController.swift */,
 				740121752770675F002CB5E5 /* Main.storyboard */,
 				7401217827706762002CB5E5 /* Assets.xcassets */,
 				7401217A27706762002CB5E5 /* LaunchScreen.storyboard */,
 				7401217D27706762002CB5E5 /* Info.plist */,
 			);
 			path = "The Wheely Cool App";
+			sourceTree = "<group>";
+		};
+		74012183277069A3002CB5E5 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				7401218B27706E83002CB5E5 /* Cell */,
+				74012184277069DA002CB5E5 /* InputViewController.swift */,
+				7401218627706A7D002CB5E5 /* InputsViewModel.swift */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		7401218827706AB0002CB5E5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7401218927706AC1002CB5E5 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7401218B27706E83002CB5E5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7401218C27706EAB002CB5E5 /* OptionsTableViewCell.swift */,
+				7401218D27706EAB002CB5E5 /* OptionsTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7401218F27706EAB002CB5E5 /* OptionsTableViewCell.xib in Resources */,
 				7401217C27706762002CB5E5 /* LaunchScreen.storyboard in Resources */,
 				7401217927706762002CB5E5 /* Assets.xcassets in Resources */,
 				740121772770675F002CB5E5 /* Main.storyboard in Resources */,
@@ -138,9 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				740121742770675F002CB5E5 /* ViewController.swift in Sources */,
 				740121702770675F002CB5E5 /* AppDelegate.swift in Sources */,
+				7401218A27706AC1002CB5E5 /* BaseViewModel.swift in Sources */,
+				7401218E27706EAB002CB5E5 /* OptionsTableViewCell.swift in Sources */,
 				740121722770675F002CB5E5 /* SceneDelegate.swift in Sources */,
+				74012185277069DA002CB5E5 /* InputViewController.swift in Sources */,
+				7401218727706A7D002CB5E5 /* InputsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
