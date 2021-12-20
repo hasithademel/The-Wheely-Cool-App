@@ -90,9 +90,7 @@ class InputViewController: UIViewController {
     @IBAction func addAction(_ sender: Any) {
         
         if viewModel.numberOfOptions() == 10 {
-            let alert = UIAlertController(title: "Oops", message: "Options limit reached", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            showAlert(message: "Limit reached")
             return
         }
         
@@ -111,10 +109,21 @@ class InputViewController: UIViewController {
     }
     
     @IBAction func doneAction(_ sender: Any) {
+        if viewModel.numberOfOptions() < 2 {
+            showAlert(message: "Please add atleast two options")
+            return
+        }
+        
         let wheelVC = WheelViewContoller(nibName: "WheelViewContoller", bundle: nil)
         let viewmodel = WheelViewModel(options: viewModel.allOptions())
         wheelVC.viewModel = viewmodel
         self.navigationController?.pushViewController(wheelVC, animated: true)
+    }
+    
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "Oops", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 
 }

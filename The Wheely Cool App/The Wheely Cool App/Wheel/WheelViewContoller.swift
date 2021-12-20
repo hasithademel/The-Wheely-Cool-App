@@ -43,6 +43,8 @@ class WheelViewContoller: UIViewController {
     }()
 
     override func viewDidLoad() {
+        congratzLabel.isHidden = true
+        navigationItem.title = "The Wheel"
         super.viewDidLoad()
     }
     

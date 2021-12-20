@@ -21,6 +21,7 @@
 		74CC3D67277085CD009E72DC /* WheelViewContoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74CC3D65277085CD009E72DC /* WheelViewContoller.xib */; };
 		74CC3D69277085EA009E72DC /* WheelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC3D68277085EA009E72DC /* WheelViewModel.swift */; };
 		74CC3D6B277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC3D6A277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift */; };
+		74CC3D6E277096AE009E72DC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC3D6D277096AE009E72DC /* Constants.swift */; };
 		9ED7914AC9D5E70B5C0ECD38 /* Pods_The_Wheely_Cool_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B5F3DCA978FDB5EC1557C3 /* Pods_The_Wheely_Cool_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		74CC3D65277085CD009E72DC /* WheelViewContoller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WheelViewContoller.xib; sourceTree = "<group>"; };
 		74CC3D68277085EA009E72DC /* WheelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewModel.swift; sourceTree = "<group>"; };
 		74CC3D6A277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFWConfiguration+VariousWheelJackpot.swift"; sourceTree = "<group>"; };
+		74CC3D6D277096AE009E72DC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F2B5F3DCA978FDB5EC1557C3 /* Pods_The_Wheely_Cool_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Wheely_Cool_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 		7401216E2770675F002CB5E5 /* The Wheely Cool App */ = {
 			isa = PBXGroup;
 			children = (
+				74CC3D6C2770969A009E72DC /* Helpers */,
 				7401218827706AB0002CB5E5 /* Base */,
 				74CC3D6327708586009E72DC /* Wheel */,
 				74012183277069A3002CB5E5 /* Inputs */,
@@ -137,6 +140,14 @@
 				74CC3D6A277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift */,
 			);
 			path = Wheel;
+			sourceTree = "<group>";
+		};
+		74CC3D6C2770969A009E72DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				74CC3D6D277096AE009E72DC /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		87B7A585A57249B5A3491150 /* Frameworks */ = {
@@ -269,6 +280,7 @@
 				74CC3D6B277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift in Sources */,
 				7401218A27706AC1002CB5E5 /* BaseViewModel.swift in Sources */,
 				7401218E27706EAB002CB5E5 /* OptionsTableViewCell.swift in Sources */,
+				74CC3D6E277096AE009E72DC /* Constants.swift in Sources */,
 				740121722770675F002CB5E5 /* SceneDelegate.swift in Sources */,
 				74CC3D66277085CD009E72DC /* WheelViewContoller.swift in Sources */,
 				74012185277069DA002CB5E5 /* InputViewController.swift in Sources */,

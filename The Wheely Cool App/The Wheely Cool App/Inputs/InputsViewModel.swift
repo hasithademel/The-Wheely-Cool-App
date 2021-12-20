@@ -12,12 +12,12 @@ class InputsViewModel: BaseViewModel {
     @Published private(set) var options: [String] = []
     
     private func loadOptions() -> [String] {
-         let savedOptions = UserDefaults.standard.object(forKey: "options") as? [String] ?? []
+         let savedOptions = UserDefaults.standard.object(forKey: kOptionsList) as? [String] ?? []
          return savedOptions
      }
     
     private func sync(options: [String]) {
-        UserDefaults.standard.setValue(options, forKey: "options")
+        UserDefaults.standard.setValue(options, forKey: kOptionsList)
         self.loadData()
     }
     
