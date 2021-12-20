@@ -111,7 +111,10 @@ class InputViewController: UIViewController {
     }
     
     @IBAction func doneAction(_ sender: Any) {
-        
+        let wheelVC = WheelViewContoller(nibName: "WheelViewContoller", bundle: nil)
+        let viewmodel = WheelViewModel(options: viewModel.allOptions())
+        wheelVC.viewModel = viewmodel
+        self.navigationController?.pushViewController(wheelVC, animated: true)
     }
 
 }

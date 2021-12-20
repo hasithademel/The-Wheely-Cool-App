@@ -20,22 +20,37 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="592"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLE-nY-2FM">
-                                <rect key="frame" x="175" y="671" width="64" height="33"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="DONE"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVy-hq-bYH">
+                                <rect key="frame" x="157" y="666" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.65490196079999996" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FfQ-0I-Ul6"/>
+                                    <constraint firstAttribute="height" constant="40" id="puu-Tw-bA1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" red="0.9523469806" green="0.95248371359999995" blue="0.95231717819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doneAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ob0-4J-0CJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CyC-Vw-7y7" secondAttribute="trailing" id="7eo-tV-Ig7"/>
-                            <constraint firstItem="wLE-nY-2FM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZTN-Ym-yg1"/>
-                            <constraint firstItem="wLE-nY-2FM" firstAttribute="top" secondItem="CyC-Vw-7y7" secondAttribute="bottom" constant="35" id="Zvn-SK-7kh"/>
+                            <constraint firstItem="dVy-hq-bYH" firstAttribute="top" secondItem="CyC-Vw-7y7" secondAttribute="bottom" constant="30" id="B7m-ZL-6Ua"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dVy-hq-bYH" secondAttribute="bottom" constant="30" id="NLq-FY-8Yx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CyC-Vw-7y7" secondAttribute="bottom" constant="100" id="dBU-el-aex"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wLE-nY-2FM" secondAttribute="bottom" constant="32" id="hRU-ML-bfA"/>
                             <constraint firstItem="CyC-Vw-7y7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jIr-7H-s3O"/>
                             <constraint firstItem="CyC-Vw-7y7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wyQ-lJ-gkD"/>
+                            <constraint firstItem="dVy-hq-bYH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zUe-ak-gwW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add values" id="Yts-bk-4OE">

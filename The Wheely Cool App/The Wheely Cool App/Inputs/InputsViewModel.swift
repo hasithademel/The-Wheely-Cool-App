@@ -24,7 +24,6 @@ class InputsViewModel: BaseViewModel {
     func loadData() {
         self.options = loadOptions()
     }
-    
 
     func addOption(option: String) {
         var savedOptions = self.loadOptions()
@@ -44,5 +43,9 @@ class InputsViewModel: BaseViewModel {
     
     func optionAt(row: Int) -> String {
         return options[row]
+    }
+    
+    func allOptions() -> [String] {
+        return loadOptions()
     }
 }

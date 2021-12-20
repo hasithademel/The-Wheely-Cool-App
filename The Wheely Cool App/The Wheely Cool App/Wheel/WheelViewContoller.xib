@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WheelViewContoller" customModule="The_Wheely_Cool_App" customModuleProvider="target">
+            <connections>
+                <outlet property="centerView" destination="A65-1h-Zib" id="UUK-7H-tc9"/>
+                <outlet property="congratzLabel" destination="qcF-rl-Enz" id="hSr-mV-CU0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wheelControl" destination="vrj-hR-qs1" id="jDc-8z-jAo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydc-Xm-plT">
+                    <rect key="frame" x="57" y="150" width="300" height="300"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrj-hR-qs1" customClass="SwiftFortuneWheel" customModule="SwiftFortuneWheel">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A65-1h-Zib">
+                            <rect key="frame" x="90" y="90" width="120" height="120"/>
+                            <color key="backgroundColor" white="0.1818331866" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="A65-1h-Zib" secondAttribute="height" id="ln9-Ld-hBh"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vrj-hR-qs1" secondAttribute="bottom" id="ICT-oa-aTS"/>
+                        <constraint firstItem="vrj-hR-qs1" firstAttribute="leading" secondItem="ydc-Xm-plT" secondAttribute="leading" id="J1q-lf-GmZ"/>
+                        <constraint firstAttribute="width" constant="300" id="MEn-rp-vzp"/>
+                        <constraint firstItem="vrj-hR-qs1" firstAttribute="top" secondItem="ydc-Xm-plT" secondAttribute="top" id="N8A-Ke-QVu"/>
+                        <constraint firstAttribute="trailing" secondItem="vrj-hR-qs1" secondAttribute="trailing" id="QTg-mj-7VA"/>
+                        <constraint firstItem="A65-1h-Zib" firstAttribute="width" secondItem="ydc-Xm-plT" secondAttribute="width" multiplier="0.4" id="UWj-Jq-4DO"/>
+                        <constraint firstItem="A65-1h-Zib" firstAttribute="centerY" secondItem="ydc-Xm-plT" secondAttribute="centerY" id="Xcn-R5-e5W"/>
+                        <constraint firstItem="A65-1h-Zib" firstAttribute="centerX" secondItem="ydc-Xm-plT" secondAttribute="centerX" id="fZK-2X-MBj"/>
+                        <constraint firstAttribute="width" secondItem="ydc-Xm-plT" secondAttribute="height" id="gSI-SS-b8p"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Iv-V4-x1E">
+                    <rect key="frame" x="157" y="500" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.1450980392" green="0.65490196079999996" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="GqD-1O-zpR"/>
+                        <constraint firstAttribute="height" constant="40" id="fjT-40-N5j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="SPIN">
+                        <color key="titleColor" red="0.9523469806" green="0.95248371359999995" blue="0.95231717819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="rotateTap:" destination="-1" eventType="touchUpInside" id="Pji-7n-5H3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcF-rl-Enz">
+                    <rect key="frame" x="16" y="49.999999999999993" width="382" height="28.666666666666664"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" red="0.98507851359999998" green="0.064446888859999996" blue="0.0076079810969999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ydc-Xm-plT" firstAttribute="width" secondItem="ydc-Xm-plT" secondAttribute="height" id="2fL-IR-JwA"/>
+                <constraint firstItem="qcF-rl-Enz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="8Q8-f6-5jx"/>
+                <constraint firstItem="qcF-rl-Enz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="9Hz-Xc-0BO"/>
+                <constraint firstItem="9Iv-V4-x1E" firstAttribute="top" secondItem="ydc-Xm-plT" secondAttribute="bottom" constant="50" id="IGi-qV-OFT"/>
+                <constraint firstItem="9Iv-V4-x1E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Oay-Km-2AQ"/>
+                <constraint firstItem="ydc-Xm-plT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="S6K-vl-7Hc"/>
+                <constraint firstItem="ydc-Xm-plT" firstAttribute="width" secondItem="ydc-Xm-plT" secondAttribute="height" id="epz-w1-RTf"/>
+                <constraint firstItem="qcF-rl-Enz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mqp-sg-aMz"/>
+                <constraint firstItem="ydc-Xm-plT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="qHz-QS-Ozi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qcF-rl-Enz" secondAttribute="trailing" constant="16" id="xyz-TF-cWr"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

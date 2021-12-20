@@ -17,6 +17,10 @@
 		7401218A27706AC1002CB5E5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401218927706AC1002CB5E5 /* BaseViewModel.swift */; };
 		7401218E27706EAB002CB5E5 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401218C27706EAB002CB5E5 /* OptionsTableViewCell.swift */; };
 		7401218F27706EAB002CB5E5 /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7401218D27706EAB002CB5E5 /* OptionsTableViewCell.xib */; };
+		74CC3D66277085CD009E72DC /* WheelViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC3D64277085CD009E72DC /* WheelViewContoller.swift */; };
+		74CC3D67277085CD009E72DC /* WheelViewContoller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74CC3D65277085CD009E72DC /* WheelViewContoller.xib */; };
+		74CC3D69277085EA009E72DC /* WheelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC3D68277085EA009E72DC /* WheelViewModel.swift */; };
+		74CC3D6B277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC3D6A277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift */; };
 		9ED7914AC9D5E70B5C0ECD38 /* Pods_The_Wheely_Cool_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B5F3DCA978FDB5EC1557C3 /* Pods_The_Wheely_Cool_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,10 @@
 		7401218927706AC1002CB5E5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		7401218C27706EAB002CB5E5 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
 		7401218D27706EAB002CB5E5 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
+		74CC3D64277085CD009E72DC /* WheelViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewContoller.swift; sourceTree = "<group>"; };
+		74CC3D65277085CD009E72DC /* WheelViewContoller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WheelViewContoller.xib; sourceTree = "<group>"; };
+		74CC3D68277085EA009E72DC /* WheelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewModel.swift; sourceTree = "<group>"; };
+		74CC3D6A277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SFWConfiguration+VariousWheelJackpot.swift"; sourceTree = "<group>"; };
 		F2B5F3DCA978FDB5EC1557C3 /* Pods_The_Wheely_Cool_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Wheely_Cool_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,7 +64,6 @@
 				6F91B436FA3440FC79903869 /* Pods-The Wheely Cool App.debug.xcconfig */,
 				2455BEBD201348DAB4B3FDEC /* Pods-The Wheely Cool App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				7401218827706AB0002CB5E5 /* Base */,
+				74CC3D6327708586009E72DC /* Wheel */,
 				74012183277069A3002CB5E5 /* Inputs */,
 				7401216F2770675F002CB5E5 /* AppDelegate.swift */,
 				740121712770675F002CB5E5 /* SceneDelegate.swift */,
@@ -118,6 +126,17 @@
 				7401218D27706EAB002CB5E5 /* OptionsTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		74CC3D6327708586009E72DC /* Wheel */ = {
+			isa = PBXGroup;
+			children = (
+				74CC3D68277085EA009E72DC /* WheelViewModel.swift */,
+				74CC3D64277085CD009E72DC /* WheelViewContoller.swift */,
+				74CC3D65277085CD009E72DC /* WheelViewContoller.xib */,
+				74CC3D6A277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift */,
+			);
+			path = Wheel;
 			sourceTree = "<group>";
 		};
 		87B7A585A57249B5A3491150 /* Frameworks */ = {
@@ -191,6 +210,7 @@
 				7401218F27706EAB002CB5E5 /* OptionsTableViewCell.xib in Resources */,
 				7401217C27706762002CB5E5 /* LaunchScreen.storyboard in Resources */,
 				7401217927706762002CB5E5 /* Assets.xcassets in Resources */,
+				74CC3D67277085CD009E72DC /* WheelViewContoller.xib in Resources */,
 				740121772770675F002CB5E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,10 +264,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CC3D69277085EA009E72DC /* WheelViewModel.swift in Sources */,
 				740121702770675F002CB5E5 /* AppDelegate.swift in Sources */,
+				74CC3D6B277087EE009E72DC /* SFWConfiguration+VariousWheelJackpot.swift in Sources */,
 				7401218A27706AC1002CB5E5 /* BaseViewModel.swift in Sources */,
 				7401218E27706EAB002CB5E5 /* OptionsTableViewCell.swift in Sources */,
 				740121722770675F002CB5E5 /* SceneDelegate.swift in Sources */,
+				74CC3D66277085CD009E72DC /* WheelViewContoller.swift in Sources */,
 				74012185277069DA002CB5E5 /* InputViewController.swift in Sources */,
 				7401218727706A7D002CB5E5 /* InputsViewModel.swift in Sources */,
 			);
