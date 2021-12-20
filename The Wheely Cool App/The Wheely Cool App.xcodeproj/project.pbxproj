@@ -17,9 +17,12 @@
 		7401218A27706AC1002CB5E5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401218927706AC1002CB5E5 /* BaseViewModel.swift */; };
 		7401218E27706EAB002CB5E5 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7401218C27706EAB002CB5E5 /* OptionsTableViewCell.swift */; };
 		7401218F27706EAB002CB5E5 /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7401218D27706EAB002CB5E5 /* OptionsTableViewCell.xib */; };
+		9ED7914AC9D5E70B5C0ECD38 /* Pods_The_Wheely_Cool_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2B5F3DCA978FDB5EC1557C3 /* Pods_The_Wheely_Cool_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2455BEBD201348DAB4B3FDEC /* Pods-The Wheely Cool App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Wheely Cool App.release.xcconfig"; path = "Target Support Files/Pods-The Wheely Cool App/Pods-The Wheely Cool App.release.xcconfig"; sourceTree = "<group>"; };
+		6F91B436FA3440FC79903869 /* Pods-The Wheely Cool App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Wheely Cool App.debug.xcconfig"; path = "Target Support Files/Pods-The Wheely Cool App/Pods-The Wheely Cool App.debug.xcconfig"; sourceTree = "<group>"; };
 		7401216C2770675F002CB5E5 /* The Wheely Cool App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Wheely Cool App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7401216F2770675F002CB5E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		740121712770675F002CB5E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		7401218927706AC1002CB5E5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		7401218C27706EAB002CB5E5 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
 		7401218D27706EAB002CB5E5 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
+		F2B5F3DCA978FDB5EC1557C3 /* Pods_The_Wheely_Cool_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Wheely_Cool_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ED7914AC9D5E70B5C0ECD38 /* Pods_The_Wheely_Cool_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72D9F94AE5DD6141EA039528 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F91B436FA3440FC79903869 /* Pods-The Wheely Cool App.debug.xcconfig */,
+				2455BEBD201348DAB4B3FDEC /* Pods-The Wheely Cool App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		740121632770675F002CB5E5 = {
 			isa = PBXGroup;
 			children = (
 				7401216E2770675F002CB5E5 /* The Wheely Cool App */,
 				7401216D2770675F002CB5E5 /* Products */,
+				72D9F94AE5DD6141EA039528 /* Pods */,
+				87B7A585A57249B5A3491150 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +120,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		87B7A585A57249B5A3491150 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5F3DCA978FDB5EC1557C3 /* Pods_The_Wheely_Cool_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7401218027706762002CB5E5 /* Build configuration list for PBXNativeTarget "The Wheely Cool App" */;
 			buildPhases = (
+				31259BDDBEAF41ECDA3B15C5 /* [CP] Check Pods Manifest.lock */,
 				740121682770675F002CB5E5 /* Sources */,
 				740121692770675F002CB5E5 /* Frameworks */,
 				7401216A2770675F002CB5E5 /* Resources */,
+				CF74382DB986B95E62E523ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +196,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31259BDDBEAF41ECDA3B15C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Wheely Cool App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF74382DB986B95E62E523ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Wheely Cool App/Pods-The Wheely Cool App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Wheely Cool App/Pods-The Wheely Cool App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Wheely Cool App/Pods-The Wheely Cool App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		740121682770675F002CB5E5 /* Sources */ = {
@@ -324,6 +393,7 @@
 		};
 		7401218127706762002CB5E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F91B436FA3440FC79903869 /* Pods-The Wheely Cool App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -352,6 +422,7 @@
 		};
 		7401218227706762002CB5E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2455BEBD201348DAB4B3FDEC /* Pods-The Wheely Cool App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
